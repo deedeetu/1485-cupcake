@@ -12,80 +12,97 @@
 
 <body>
 
-<header>
+<header id="home">
 	<div class="wrapper">
-		<div class="row">
-			<nav>
-				<ul class="brn">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#"><img src="img/logo.jpg" alt="Real Fake Authentic Logo" height="85" width="85"></a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
+		<nav class="row">
+			<ul class="brn">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about-us">About</a></li>
+				<li><h1><a href="#home"><img src="img/logo.jpg" alt="Real Fake Authentic" height="85" width="85"></a></h1></li>
+				<li><a href="#our-treats">Products</a></li>
+				<li><a href="#contact-us">Contact Us</a></li>
+			</ul>
+		</nav>
 	</div>
 	
 	<section class="bg-teal">
-		<div class="wrapper">
-			<img src="img/hero.jpg" height="400" width="650">
-			<h1 class="wht">Try Our Signature Cupcake</h1>
+		<div class="wrapper" id="bg-one">
+			<p>Try Our Signature Cupcake</p>
 		</div>
 	</section>
 </header>
 
-<section class="teal">
+<section id="about-us">
 	<div class="wrapper">
-		<h2 class="teal">Specialty Bakery Dedicated to creating and baking several different sweet treats</h2>
+		<h2>Specialty Bakery Dedicated to creating and baking several different sweet treats</h2>
 		<div class="row">
 		
-			<section><img src="img/display-cupcake.jpg"></section>
+			<img src="img/display-cupcake.jpg" alt="" height="170">
 			
-			<section class="brn">
-				<h3 class="teal">About Us</h3>
+			<section>
+				<header>
+				<h3>About Us</h3>
+				</header>
 				<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
-				<p>We are open 7 days a week, beginning Sunday at <time>11 am</time> till <time>4 pm</time>. Monday through Friday <time>8 am</time> till <time>7 pm</time>, and Saturday <time>10 am</time> to <time>5 pm</time>.</p>
+				<p>We are open 7 days a week, beginning Sunday at <time datetime="11:00">11 am</time> till <time datetime="16:00">4 pm</time>. Monday through Friday <time datetime="08:00">8 am</time> till <time datetime="19:00">7 pm</time>, and Saturday <time datetime="10:00">10 am</time> to <time datetime="17:00">5 pm</time>.</p>
 				<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+1234567890">please give us a call.</a></p>
-				<a href="mailto:template@gmail.com">Contact Us</a>
+				<p><a href="mailto:template@gmail.com">Contact Us</a></p>
 			</section>
 			
 			<section class="brn">
-				<h3 class="teal">Hours</h3>
-				<p>Monday - Friday</p>
-				<p><time>8:00 AM</time> - <time>7:00 PM</time></p> <!-- page 91-->
-				<p>Saturday</p>
-				<p><time>10:00 AM</time> - <time>5:00 PM</time></p>
-				<p>Sunday</p>
-				<p><time>11:00 AM</time> - <time>4:00 PM</time></p>
+				<header>
+				<h3>Hours</h3>
+				</header>
+				<ul>
+					<li>
+					<h3><img src="img/icon-cherry.png" alt="">Monday - Friday</h3>
+					<p><time datetime="08:00">8:00 AM</time> &ndash; <time datetime="19:00">7:00 PM</time></p>
+					</li>
+					<li>
+					<h3><img src="img/icon-cherry.png" alt="">Saturday</h3>
+					<p><time datetime="10:00">10:00 AM</time> &ndash; <time datetime="17:00">5:00 PM</time></p>
+					</li>
+					<li>
+					<h3><img src="img/icon-cherry.png" alt="">Sunday</h3>
+					<p><time datetime="11:00">11:00 AM</time> &ndash; <time datetime="16:00">4:00 PM</time></p>
+					</li>
+				</ul>
 			</section>	
 		</div>
 	</div>
 </section>
 
-<section>
+<section class="bg-teal" id="our-treats">
 	<div class="wrapper">
-		<h2 class="wht">Our Treats</h2>
+		<header>
+		<h2>Our Treats</h2>
+		</header>
 		<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		
 		<div class="row">
 			<section class="float-l">
-				<img class="img-circle" src="img/product-one.png">
-				<h3 class="wht">Signature Cupcakes</h3>
+				<img class="img-circle" src="img/product-one.png" alt="" height="170">
+				<header>
+				<h3>Signature Cupcakes</h3>
+				</header>
 				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
 				<a href="#">Order Now</a>
 			</section>
 			
 			<section class="float-l">
-				<img class="img-circle" src="img/product-two.png">
-				<h3 class="wht">Allergen Free</h3>
+				<img class="img-circle" src="img/product-two.png" alt="" height="170">
+				<header>
+				<h3>Allergen Free</h3>
+				</header>
 				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p>
 				<a href="#">Order Now</a>
 			</section>
 			
 			<section class="float-r">
-				<img class="img-circle" src="img/product-three.png">
-				<h3 class="wht">Vegan</h3>
+				<img class="img-circle" src="img/product-three.png" alt="" height="170">
+				<header>
+				<h3>Vegan</h3>
+				</header>
 				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love</p>
 				<a href="#">Order Now</a>
 			</section>
@@ -93,39 +110,68 @@
 	</div>
 </section>
 
-<section class="bg-teal">
-	<div class="wrapper">
-		<h2 class="teal">Daily Flavor</h2>
-		
-		<div class="row" id="flavor">
-			<section class="">
+<section class="bg-wht">
+	<div class="wrapper" id="flavor">
+		<header>
+		<h2>Daily Flavor</h2>
+		</header>
+		<div class="row">
+			<section class="float-l">
+				<header>
 				<h3>Wedding Cake</h3>
+				</header>
 				<p>White Cake frosted with white buttercream and topped with wedding day sprinkles and a rose ornament.</p>
-				
+			</section>
+			
+			<section class="float-l">
+				<header>
 				<h3>The Tuxed</h3>
+				</header>
 				<p>Chocolate Cake frosted with White buttercream, sprinkled with sprinkles.</p>
-				
+			</section>
+			
+			<section class="float-l">
+				<header>
 				<h3>Princess/Prince</h3>
+				</header>
 				<p>Almond flavored White Cake frosted with a pastel pink and pastel blue swirl vanilla buttercream, topped with colorful confetti sprinkles.</p>
-				
-				<h3>Peanut Butter Cup</h3>
-				<p>Chocolate Cake frosted with peanut butter buttercream and topped with peanut butter cup crumbles.</p>
-				
+			</section>
+			
+			<section class="float-r">	
+				<header>
 				<h3>Go Big Red Velvet</h3>
+				</header>
 				<p>Always friendly for Husker game day!! Red Velvet cake frosted with traditional cream cheese frosting and topped with red sprinkles.</p>
 			</section>
 		</div>
 		
 		<div class="row">
-			<section class="">
-				<h3>Cookies &amp; Cream</h3>
-				<p>Chocolate Cake frosted with chocolate cookie crumb buttercream and topped with crumbed oreo crumbs.</p>
 		
-				<h3>Signature</h3>
-				<p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
-		
+			<section class="float-l">
+				<header>
+				<h3>Peanut Butter Cup</h3>
+				</header>
+				<p>Chocolate Cake frosted with peanut butter buttercream and topped with peanut butter cup crumbles.</p>
+			</section>
 				
+			<section class="float-l">
+				<header>
+				<h3>Cookies &amp; Cream</h3>
+				</header>
+				<p>Chocolate Cake frosted with chocolate cookie crumb buttercream and topped with crumbed oreo crumbs.</p>
+			</section>
+			
+			<section class="float-l">
+				<header>
+				<h3>Signature</h3>
+				</header>
+				<p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
+			</section>
+			
+			<section class="float-r">
+				<header>
 				<h3>Chocolate Lovers</h3>
+				</header>
 				<p>Chocolate Cake dipped in chocolate ganache, sprinkled with mini chocolate chips and topped with a dollop of chocolate buttercream.</p>
 			</section>
 		</div>
@@ -134,50 +180,49 @@
 
 <section class="bg-teal">
 	<div class="wrapper">
-		<h2 class="wht">Place Order</h2>
+		<h2>Place Order</h2>
 		<p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
 		
-		<section>
-			<table class="brn">
-				<caption class="wht">Prices</caption>
-				<thead>
-					<tr>
-						<th>Individual</th>
-						<th>One Dozen</th>
-						<th>Two Dozen</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Mini</td>
-						<td>$1.25</td>
-						<td>$13.00</td>
-						<td><b>$2.00 Off</b></td>
-					</tr>
-					<tr>
-						<td>Regular</td>
-						<td>$2.50</td>
-						<td>$27.50</td>
-					</tr>
-					<tr>
-						<td>Jumbo</td>
-						<td>$3.50</td>
-						<td>$38.50</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		
+		<table>
+			<caption>Prices</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Individual</th>
+					<th>One Dozen</th>
+					<th>Two Dozen</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Mini</td>
+					<td>$1.25</td>
+					<td>$13.00</td>
+					<td><b>$2.00 Off</b></td>
+				</tr>
+				<tr>
+					<td>Regular</td>
+					<td>$2.50</td>
+					<td>$27.50</td>
+				</tr>
+				<tr>
+					<td>Jumbo</td>
+					<td>$3.50</td>
+					<td>$38.50</td>
+				</tr>
+			</tbody>
+		</table>
+
 		<form> 
 			<div class="row">
 				<label for="firstname">First Name</label>
-				<input type="firstname" name="Name" id="First Name">
+				<input id="firstname" type="text" name="firstname">
 				<label for="lastname">Last Name</label>
-				<input id="lastname" type="name" name="Last Name">
+				<input id="lastname" type="text" name="lastname">
 				<label for="phonename">Phone Name</label>
-				<input id="phonename" type="name" name="Phone Name"> 
-				<label for="emailaddress">Email Address</label>
-				<input id="email" type="email" name="Email"> 
+				<input id="phonename" type="text" name="phonename"> 
+				<label for="email">Email Address</label>
+				<input id="email" type="text" name="email"> 
 				<p>Occasion</p>
 				<select name="occasion">
 				<optgroup label="occasion">
@@ -193,7 +238,7 @@
 				<textarea id="messages"></textarea>
 				
 				<fieldset>
-					<legend>Pick A Time</legend>
+					<legend>Quantity</legend>
 					<label>
 						Individual
 						<input type="radio" name="Quantity" value="individual">
@@ -225,7 +270,7 @@
 
 				<label>
 					Signature
-					<input type="checkbox" name="IceCream" value="CookieandCream" checked>
+					<input type="checkbox" name="IceCream" value="CookieandCream">
 				</label>
 				</div>
 				
@@ -261,20 +306,22 @@
 				
 				<fieldset>
 					<legend>Type</legend>
-					<label>
-						Signature
-						<input type="radio" name="Type" value="signature">
-					</label>
+					<div class="row">
+						<label>
+							Signature
+							<input type="radio" name="Type" value="signature">
+						</label>
 
-					<label>
-						Allergen Free
-						<input type="radio" name="Type" value="allergenfree">
-					</label>
+						<label>
+							Allergen Free
+							<input type="radio" name="Type" value="allergenfree">
+						</label>
 
-					<label>
-						Vegan
-						<input type="radio" name="Type" value="vegan">
-					</label>
+						<label>
+							Vegan
+							<input type="radio" name="Type" value="vegan">
+						</label>
+					</div>
 				</fieldset>
 				
 				<p><a href="#" id="submit">Pay On Paypal</a></p>
@@ -283,22 +330,22 @@
 	</div>
 </section>
 
-<section>
-	<div class="wrapper">
+<footer id="contact-us">
+	<section class="wrapper">
 		<div class="row">
 			<section>
-				<h3>Real Fake Authentic</h3>
+				<h4>Real Fake Authentic</h4>
 				<p>specialty bakery dedicated to creating and baking several different sweet treats. </p>
 			</section>
-			
-			<address>
-				<h3>Our Location</h3>
+
+			<section>
+				<h4>Our Location</h4>
 				<p>123 Fake Street #101</p>
 				<p>Fakersville, FA 12345</p>
-			</address>
-			
-			<address>
-				<h3>Connect</h3>
+			</section>
+
+			<section>
+				<h4>Connect</h4>
 				<ul>
 					<li><a href="https://www.facebook.com/" target="_blank"></a> <span>Facebook</span> </li>
 					<li><a href="https://www.twitter.com/" target="_blank"></a> <span>Twitter</span> </li>
@@ -306,10 +353,10 @@
 					<li><a href="https://www.linkedin.com/" target="_blank"></a> <span>Linkedin</span> </li>
 					<li><a href="https://google.com/" target="_blank"></a> <span>Google</span> </li>
 				</ul>
-			</address>
+			</section>
 		</div>
-	</div>
-</section>
+	</section>
+</footer>
 
 </body>
 </html>
