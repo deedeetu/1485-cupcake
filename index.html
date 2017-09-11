@@ -12,10 +12,10 @@
 
 <body>
 
-<header id="home">
-	<div class="wrapper">
-		<nav class="row">
-			<ul class="brn">
+<header>
+	<div>
+		<nav class="wrapper">
+			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about-us">About</a></li>
 				<li><h1><a href="#home"><img src="img/logo.jpg" alt="Real Fake Authentic" height="85" width="85"></a></h1></li>
@@ -24,14 +24,12 @@
 			</ul>
 		</nav>
 	</div>
-	
-	<section id="try-our">
-		<div class="wrapper">
-			<div id="bg-one">
-				<p>Try Our Signature Cupcake</p>
-			</div>
+	<div id="try-our">
+		<div class="wrapper" id="bg-one">
+			<p>Try Our Signature Cupcake</p>
 		</div>
-	</section>
+	</div>
+
 </header>
 
 <section class="wrapper" id="about-us">
@@ -77,7 +75,7 @@
 		<header>
 		<h2 class="wht">Our Treats</h2>
 		</header>
-		<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
+		<p id="our-treats-p">We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		
 		<div class="row">
 			<section class="float-l">
@@ -85,7 +83,7 @@
 				<header>
 				<h3>Signature Cupcakes</h3>
 				</header>
-				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
+				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p><br>
 				<a href="#place-order">Order Now</a>
 			</section>
 			
@@ -94,7 +92,7 @@
 				<header>
 				<h3>Allergen Free</h3>
 				</header>
-				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p>
+				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p><br>
 				<a href="#place-order">Order Now</a>
 			</section>
 			
@@ -103,7 +101,7 @@
 				<header>
 				<h3>Vegan</h3>
 				</header>
-				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love</p>
+				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love</p><br>
 				<a href="#place-order">Order Now</a>
 			</section>
 		</div>
@@ -178,14 +176,15 @@
 
 <section id="place-order">
 	<div class="wrapper">
-		<h2 class="wht">Place Order</h2>
+		<header>
+			<h2 class="wht">Place Order</h2>
+		</header>
 		<p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
 		
 		<table>
 			<caption>Prices</caption>
 			<thead>
 				<tr>
-					<th></th>
 					<th>Individual</th>
 					<th>One Dozen</th>
 					<th>Two Dozen</th>
@@ -201,30 +200,28 @@
 				<tr>
 					<td>Regular</td>
 					<td>$2.50</td>
-					<td>$27.50</td>
-					<td></td>
+					<td colspan="2">$27.50</td>
 				</tr>
 				<tr>
 					<td>Jumbo</td>
 					<td>$3.50</td>
-					<td>$38.50</td>
-					<td></td>
+					<td colspan="2">$38.50</td>
 				</tr>
 			</tbody>
 		</table>
 
-		<form> 
-			<div class="row" id="form-l">
+		<form class="row"> 
+			<div id="form-l">
 				<div class="float-l">
 					<label for="firstname">First Name</label>
 					<input id="firstname" type="text" name="firstname">
 					<label for="lastname">Last Name</label>
 					<input id="lastname" type="text" name="lastname">
 					<label for="phonename">Phone Name</label>
-					<input id="phonename" type="text" name="phonename"> 
+					<input id="phonename" type="tel" name="phonename"> 
 					<label for="email">Email Address</label>
-					<input id="email" type="text" name="email"> 
-					<legend>Occasion</legend>
+					<input id="email" type="email" name="email"> 
+					<label>Occasion</label>
 					<select name="Occasion">
 					<optgroup label="Occasion">
 						<option>Birthday</option>
@@ -235,105 +232,114 @@
 				</div>
 			</div>
 			
-			<div class="row" id="form-r">
+			<div id="form-r">
 				<div class="float-r">
 					<label for="messages" id="message">Special Requests</label><br>
 					<textarea id="messages" name="specialrequests"></textarea>
 					
-					<div class="row">
-					<fieldset>
+					<div>
+					<fieldset class="float-l">
 						<legend>Quantity</legend>
 						<label>
-							Individual
 							<input type="radio" name="Quantity" value="individual">
+							Individual
 						</label>
 
 						<label>
-							One Dozen
 							<input type="radio" name="Quantity" value="onedozen">
+							One Dozen
 						</label>
 
 						<label>
-							Two Dozen
 							<input type="radio" name="Quantity" value="twodozen">
+							Two Dozen
 						</label>
 					</fieldset>
 					</div>
 					
-					<div class="row">
-					<fieldset class="row">
+					<div>
+					<fieldset class="float-l">
 					<legend>Flavor</legend>
 					<label>
+						<input type="checkbox" name="CupCake" value="WeddingCake">
 						Wedding Cake
-						<input type="checkbox" name="IceCream" value="Vanilla">
-					</label>
+					</label><br>
 
 					<label>
-						Gp Big Red
-						<input type="checkbox" name="IceCream" value="Chocolate">
-					</label>
+						<input type="checkbox" name="CupCake" value="Chocolate">
+						Go Big Red
+					</label><br>
 
 					<label>
+						<input type="checkbox" name="CupCake" value="Signature">
 						Signature
-						<input type="checkbox" name="IceCream" value="CookieandCream">
-					</label>
-
-					<label>
-						The Tuxed
-						<input type="checkbox" name="IceCream" value="Vanilla">
-					</label>
-
-					<label>
-						PB Cup
-						<input type="checkbox" name="IceCream" value="Chocolate">
-					</label>
-
-					<label>
-						Chocolate Lovers
-						<input type="checkbox" name="IceCream" value="CookieandCream">
-					</label>
-
-					<label>
-						Princess
-						<input type="checkbox" name="IceCream" value="Vanilla">
-					</label>
-
-					<label>
-						Cookie &amp; Cream
-						<input type="checkbox" name="IceCream" value="Chocolate">
 					</label>
 					</fieldset>
 					</div>
 					
-					<div class="row">
-					<fieldset class="row">
+					
+					<div>
+					<fieldset class="float-l">
+					<label>
+						<input type="checkbox" name="CupCake" value="The Tuxed">
+						The Tuxed
+					</label><br>
+
+					<label>
+						<input type="checkbox" name="CupCake" value="PB Cup">
+						PB Cup
+					</label><br>
+
+					<label>
+						<input type="checkbox" name="CupCake" value="Chocolate Lovers">
+						Chocolate Lovers
+					</label>
+					</fieldset>
+					</div>
+					
+					<div>
+					<fieldset class="float-r">	
+					<label>
+						<input type="checkbox" name="CupCake" value="Princess">
+						Princess
+					</label><br>
+
+					<label>
+						<input type="checkbox" name="CupCake" value="Cookie&Cream">
+						Cookie &amp; Cream
+					</label>
+					</fieldset>
+					</div>
+					
+					<div>
+					<fieldset class="float-l">
 						<legend>Type</legend>
 							<label>
-								Signature
 								<input type="radio" name="Type" value="signature">
+								Signature
 							</label>
 
 							<label>
-								Allergen Free
 								<input type="radio" name="Type" value="allergenfree">
+								Allergen Free
 							</label>
 
 							<label>
-								Vegan
 								<input type="radio" name="Type" value="vegan">
+								Vegan
 							</label>
 					</fieldset>
-					</div>
+					</div><br>
 					
-					<p><a href="https://www.paypal.com/" target="_blank">Pay On Paypal</a></p>
+					<p class="float-r"><a href="https://www.paypal.com/" target="_blank">Pay On Paypal</a></p>
 				</div>
 			</div>	
 		</form>
 	</div>
 </section>
 
-<footer class="wrapper" id="contact-us">
-		<div class="row">
+<footer class="wrapper">
+		<div class="row" id="contact-us">
 			<section class="float-l">
 				<h4>Real Fake Authentic</h4>
 				<p>specialty bakery dedicated to creating and baking several different sweet treats. </p>
@@ -357,6 +363,11 @@
 			</section>
 	</div>
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/functions.js"> </script>
 
 </body>
 </html>

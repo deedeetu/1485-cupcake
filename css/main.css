@@ -73,7 +73,7 @@ a:hover {
 }
 
 #about-us a:hover {
-	color: #7fc9c4;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -81,15 +81,17 @@ a:hover {
 	width: 180px;
 }
 
-h2 {
-	font: 36px 'gochi hand', sans-serif;
+h2, #our-treats h3, #our-treats p {
 	text-align: center;
 }
 
-#flavor h3, #our-treats h3, #about-us h3, h4 {
+h2 {
+	font: 36px 'gochi hand', sans-serif;
+}
+
+#flavor h3, #our-treats h3, #about-us h3, h4, col:first-child {
 	font: 18px 'myriad-pro', sans-serif;
 	text-transform: uppercase;
-
 }
 
 #flavor h3, #about-us h3, h4 {
@@ -98,18 +100,22 @@ h2 {
 
 #our-treats h3 {
 	color: #fff;
-	text-align: center;
 }
 
 #our-treats p {
 	color: #000;
 	width: 280px;
-	text-align: center;
+}
+
+#our-treats-p {
+	margin-left: 450px;
 }
 
 #contact-us p {
 	width: 300px;
 }
+
+
 
 /*----------1.3 - Button----------*/
 
@@ -220,6 +226,7 @@ fieldset {
 	-ms-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px 15px;
+	border: none;
 }
 
 #form-l label, #form-l p, #message, legend {
@@ -238,6 +245,7 @@ textarea {
 	-ms-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px 15px;
+	border: none;
 }
 
 /*--------------------------------------------------------------
@@ -269,6 +277,7 @@ nav li {
 
 .row {
 	overflow: auto;
+	padding: 30px 0;
 }
 
 /*----------3.2	- Site Header----------*/
@@ -297,7 +306,7 @@ nav li {
 	background-size: cover;
 	width:970px;
 	height:400px;
-	margin-left: 100px;
+	margin-left: 250px;
 	padding:50px;
 }
 
@@ -318,6 +327,7 @@ nav li {
  	border-top-right-radius: 50% 50%;
  	border-bottom-right-radius: 50% 50%;
  	border-bottom-left-radius: 50% 50%;
+	padding: 10px;
 }
 
 /*----------4.4 - Sprite----------*/
@@ -394,6 +404,10 @@ nav li {
 	color: #7fc9c4;
 }
 
+nav {
+	background-color: #fff;
+}
+
 /*----------5.3 - Alignments----------*/
 
 #our-treats section:nth-child(2) {
@@ -409,7 +423,7 @@ nav li {
 }
 
 #flavor .float-l {
-	margin-left: 100px;
+	margin-right: 135px;
 }
 
 #place-order table, #place-order p {
@@ -418,4 +432,7 @@ nav li {
 
 #contact-us .float-l {
 	margin-right: 144px;
+}
+#form-l, #form-r {
+	padding: 0 50px;
 }
