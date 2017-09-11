@@ -21,6 +21,8 @@
 	3.3	- Site Footer
 4.0 - Media
 	4.1 - FLoats
+	4.2 - Images
+	4.3 - Image Circle
 5.0 - Utility
 	5.1 - Text Transform
 	5.2 - Colors
@@ -41,17 +43,62 @@
 ----------------------------------------------------------------*/
 /*----------1.1	- Headings----------*/
 
+#try-our p {
+	font: 36px 'gochi hand', sans-serif;
+	color: #fff;
+	background-color: #7fc9c4;
+	padding: 10px;
+	margin-top: 250px;
+	margin-left: -50px;
+}
 
 /*----------1.2 - Body Copy----------*/
 
-#flavor p, #our-treats p {
-	font: 14px 'myriad-pro', sans-serif;
-	
+#about-us-p {
+	width: 650px;
+	margin-left: 40px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7fc9c4;
+	text-decoration: none;
+}
+
+#about-us a {
+	color: #7fc9c4;
+}
+
+#about-us a:hover {
+	color: #7fc9c4;
+	text-decoration: none;
 }
 
 #flavor p {
+	width: 180px;
+}
+
+h2 {
+	font: 36px 'gochi hand', sans-serif;
+	text-align: center;
+}
+
+#flavor h3, #our-treats h3, #about-us h3, h4 {
+	font: 18px 'myriad-pro', sans-serif;
+	text-transform: uppercase;
+
+}
+
+#flavor h3, #about-us h3, h4 {
+	color: #7fc9c4;	
+}
+
+#our-treats h3 {
 	color: #fff;
-	width: 190px;
+	text-align: center;
 }
 
 #our-treats p {
@@ -60,10 +107,138 @@
 	text-align: center;
 }
 
+#contact-us p {
+	width: 300px;
+}
+
 /*----------1.3 - Button----------*/
+
+#button-1, #our-treats a, #place-order a {
+	font: 18px 'myriad-pro', sans-serif;
+	text-transform: uppercase;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 16px 30px;
+	
+}
+
+#button-1 {
+	background-color: #7fc9c4;
+	color: #fff;
+}
+
+#our-treats a, #place-order a {
+	background-color: #fff;
+	color: #7fc9c4;
+}
+
+#button-1:hover, #our-treats a:hover, #place-order a:hover {
+	font: 18px 'myriad-pro', sans-serif;
+	text-transform: uppercase;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 16px 30px;
+}
+	
+#button-1:hover {
+	background-color: #fff;
+	color: #7fc9c4;
+	border: 2px solid #7fc9c4;
+}
+
+#our-treats a:hover, #place-order a:hover {
+	background-color: #7fc9c4;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
 /*----------1.4 - Lists----------*/
 /*----------1.5 - Table----------*/
+
+table {
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+tr td:nth-of-type(1) {
+	text-align: left;
+}
+
+thead, tr:last-child{
+	border-bottom: 4px solid #fff;
+}
+
+td {
+	padding: 10px 40px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #fff;
+}
+
+th, caption {
+	font: 18px 'myriad-pro', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	color: #fff;
+}
+
 /*----------1.6 - Form----------*/
+
+.form {
+	margin: 0 auto;
+}
+
+fieldset p {
+	text-align: right;
+	margin: 30px 18px 30px 0;
+}
+
+fieldset {
+	margin: 0 auto;
+	border: none;
+	width: 400px;
+}
+
+#form-l input, #form-l p{
+	display: block;
+	width: 400px;
+	height: 43px;
+	margin: 10px 0 30px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
+
+#form-l label, #form-l p, #message, legend {
+	font: 18px 'myriad-pro', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	color: #000;
+}
+
+textarea {
+	height: 152px;
+	width: 400px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
 
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS:
@@ -88,14 +263,13 @@ nav li {
 /*----------3.1 - Site Structure----------*/
 
 .wrapper {
-	width: 1000px;
+	width: 1170px;
 	margin: 0 auto;
 }
 
 .row {
 	overflow: auto;
 }
-
 
 /*----------3.2	- Site Header----------*/
 /*----------3.3	- Site Footer----------*/
@@ -108,17 +282,94 @@ nav li {
 
 .float-l {
 	float: left;
-	margin-right: 80px;
 }
 
 .float-r {
 	float: right;
 }
 
-/*----------4.2 - Image Circle----------*/
+
+/*----------4.2 - Image----------*/
+
+#bg-one {
+	background-image: url(../img/bg-one.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:970px;
+	height:400px;
+	margin-left: 100px;
+	padding:50px;
+}
+
+#hour li {
+	list-style-image: url(../img/icon-cherry.png);
+}
+
+#about-cupcake {
+	margin-top: 20px;
+}
+
+/*----------4.3 - Image Circle----------*/
 
 .img-circle {
-    border-radius: 50%;
+	background-color: #fff;
+ 	border-radius: 50%;
+ 	border-top-left-radius: 50% 50%;
+ 	border-top-right-radius: 50% 50%;
+ 	border-bottom-right-radius: 50% 50%;
+ 	border-bottom-left-radius: 50% 50%;
+}
+
+/*----------4.4 - Sprite----------*/
+
+#contact-us ul{
+	list-style: none;
+}
+
+#contact-us ul span{
+	display: none;
+}
+
+#contact-us ul {
+	height: 25px;
+}
+
+#contact-us ul a, #contact-us ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#contact-us ul li:last-child {
+	padding-right: 0;
+}
+
+#contact-us ul li a{
+	width: 25px;
+	height: 25px;
+}
+
+#contact-us ul li:first-child a{
+	background: url("../img/icon-fb.png") no-repeat 0 0;
+}
+
+#contact-us ul li:nth-child(2) a{
+	background: url("../img/icon-tw.png") no-repeat 0 0;
+}
+
+#contact-us ul li:nth-child(3) a{
+	background: url("../img/icon-pin.png") no-repeat 0 0;
+}
+
+#contact-us ul li:nth-child(4) a{
+	background: url("../img/icon-linked.png") no-repeat 0 0;
+}
+
+#contact-us ul li:last-child a{
+	background: url("../img/icon-wifi.png") no-repeat 0 0;
+}
+
+#contact-us ul li a:hover{
+	background-position: 0 -25px;
 }
 
 /*--------------------------------------------------------------
@@ -131,12 +382,8 @@ nav li {
 	color: #432920;
 }
 
-.bg-teal {
+#place-order, #our-treats, #try-our {
 	background-color: #7fc9c4;
-}
-
-.bg-wht {
-	background-color: #fff;
 }
 
 .wht {
@@ -149,13 +396,26 @@ nav li {
 
 /*----------5.3 - Alignments----------*/
 
-#columns {
-	-webkit-column-count: 4;
-    -moz-column-count: 4;
-	-o-column-count: 4;
-    -ms-column-count: 4;
-    column-count: 4;
-	list-style-type: none;
-	padding: 0;
+#our-treats section:nth-child(2) {
+	padding-left: 150px;
 }
 
+#our-treats a {
+	margin-left: 55px;
+}
+
+#our-treats img {
+	margin-left: 90px;
+}
+
+#flavor .float-l {
+	margin-left: 100px;
+}
+
+#place-order table, #place-order p {
+	margin-left: 350px;
+}
+
+#contact-us .float-l {
+	margin-right: 144px;
+}
